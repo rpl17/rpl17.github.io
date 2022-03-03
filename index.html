@@ -4,12 +4,16 @@
 		.projects{
 		text-decoration: none;
 		background-color: #EEEEEE;
-		padding: 2px 6px 2px 6px;
+		padding: 5px 6px 5px 6px;
 		height: 50px;
 		width: 125px;
 		border-radius: 12px;
 		background-color: gray;
 		color: white;
+		}
+		
+		.resume{
+		text-decoration: none;
 		}
 		
 		.title{
@@ -47,23 +51,33 @@
 			height: 25px;  
 			width: 25px;
 		}
+		
 		#projects {
 			border-style: solid;
-			height: 2000px;
+			height: auto;
 		} 
-	
-		.education {
-		color: green;
-		font-size: 20px;
-		top: 10px;
-		right: 110px;
+		
+		#resume {
+		border-style: solid;
+			height: 1000px;
 		}
+		
 		.resume {
 		font-size: 20px;
-		color: blue;
+		color: green;
 		top: 10px;
 		right: 20px;
 		}
+		
+		.powerpoint{
+		font-size: 20px;
+		height: 50px;
+		width: 125px;
+		border-radius: 12px;
+		background-color: orange;
+		color: white;
+		}
+				
 </style> 
  </style>
 </head>
@@ -74,8 +88,8 @@
 <body>
 	
 	<h1><center>
-	<button class="btn education">Education</button>
-	<button class="btn resume">Resume</button>
+	<! target="_blank">
+	<a class="btn resume" href="#resume">Resume</a>
 	<br>
 	<p> <img src="rlportfolio.JPG"> </p>
 	<br>
@@ -85,18 +99,49 @@
 	<p> Software Engineer </p>
 	<br>
 	<br>
-	<form action="https://github.com/rpl17">
+	<form action="https://github.com/rpl17" target="_blank">
 	<a class="projects" href="#projects">Projects</a>
-    <button id="github" type="submit" class="github"> <img src="github.JPG"/> Github</button>
+    <button id="github" type="submit" style= "cursor:pointer" class="github"> <img src="github.JPG"/> Github</button>
 	</form>
 	<br>
 	</center>
 	</h1>
-	<h2><center>
+	<h2>
 	<div id="projects" style="background-color:#394565" >
 	<br>
-	<p> My Projects </p>
+	<center><p style="font-size:30px"> My Projects </p></center>
+	<br>
+	<br>
+	Artificial Intelegence Final Project: Gas Price Predictor
+	<p> <img src="aifinal.JPG" width=65%> </p>
+	<form action="https://github.com/rpl17/AIFinal-Gas-Price-Predictor" target="_blank">
+	Download Code:  <button id="github" type="submit" style= "cursor:pointer" class="github"> <img src="github.JPG"/> Github</button>
+	</form>
+	<form action="https://docs.google.com/presentation/d/1AHb0iQuOBmBiV-9GO6oY2pz8k01x-9_4nn0MVCyZjzQ/edit?usp=sharing" target="_blank">
+	Presentation Demo:  <button type="submit" style= "cursor:pointer" class="powerpoint">Demo</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	MongoDB Server & Shopping Site
+	<p> <img src="mongo.JPG"> </p>
+	<form action="https://github.com/rpl17/MongoDB-Server-Shoping-site" target="_blank">
+	Download Code:  <button id="github" type="submit" style= "cursor:pointer" class="github"> <img src="github.JPG"/> Github</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	Software Engineering Capstone: Casino Application
+	<p> <img src="casino.JPG"width=50%><img src="casino2.JPG" width=50%> </p>
+	<form action="https://github.com/rpl17/Casino" target="_blank">
+	Download Code:  <button id="github" type="submit" style= "cursor:pointer" class="github"> <img src="github.JPG"/> Github</button>
+	</form>
+	</h3>
+	<div id="resume" class="imageContainer">
+	<center><p style="font-size:30px"> Resume </p></center>
+	<iframe height=100% width=100% src="RyanLangeResume.pdf" >
 	</div>
-	Travis Sucks
 </body>
 </html>
