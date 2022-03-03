@@ -1,20 +1,24 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<style>
-		.projects{
+		projects{
+		font-size: 20px;
 		height: 50px;
 		width: 125px;
 		background-color: inherit;
 		border-radius: 12px;
+		border-style: solid;
 		}
+		
 		.github{
+		font-size: 20px;
 		height: 50px;
 		width: 125px;
 		border-radius: 12px;
-		background-color: #394565;
+		background-color: #0e181c;
 		color: white;
 		}
+		
 		.btn{
 		border: none;
 		padding:14x 28x;
@@ -22,14 +26,25 @@
 		display: inline-block;
 		background-color: inherit;
 		position: relative;
-		top: -33px;
+		top: -15px;
 		right: -800px;
 		}
+		
 		h1 {
 			background-image: url('portfolio.jpg');
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
 		}
+		html {
+		scroll-behavior: smooth;
+		}
+		#github img {
+			height: 25px;  
+			width: 25px;
+		}
+		#projects {
+			height: 2000px;
+		} 
 		
 		.education {color: Green;}
 		.resume {color: blue;}
@@ -46,7 +61,8 @@
 	<button class="btn education">Education</button>
 	<button class="btn resume">Resume</button>
 	<br>
-	Ryan Lange's Portfolio
+<! Change This to an image of bubble letters>
+	<p style="font-family:verdana"> Ryan Lange's Portfolio </p>
 	<br>
 	<br>
 	<br>
@@ -54,16 +70,20 @@
 	<p> Software Engineer </p>
 	<br>
 	<br>
-	<button class="projects">Projects</button>
-	<button class="github">Github</button>
+	<a class="projects" href="#projects">Projects</a>
+	<button id="github" class="github">  <img src="github.jpg"/> Github</button>
 	<br>
 	<br>
-	<center>
-	<center>
 <!choose new img ||| style="background-color:#394565;">
 		<p style="background-image: ('portfolio.jpg')";</p>
 		
 	</center>
 	</h1>
+	<h2><center>
+	<div id="projects">
+	<p> My Projects </p>
+	<br>
+	</div>
+	Travis Sucks
 </body>
 </html>
